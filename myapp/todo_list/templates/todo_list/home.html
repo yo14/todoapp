@@ -22,13 +22,13 @@
             <tr class="table-secondary">
                 <td class="hasdone">{{item.item}}</td>
                 <td>{{item.completed}}</td>
-                <td><center>DELETE</center></td>
+                <td><center><a href="{% url 'delete' item.id %}">DELETE</a></center></td>
             </tr>
             {% else %}
             <tr>
                 <td>{{item.item}}</td>
                 <td>{{item.completed}}</td>
-                <td><center>DELETE</center></td>
+                <td><center><a href="{% url 'delete' item.id %}">DELETE</a></center></center></td>
             </tr>
             {% endif%}
         {% endfor %}
