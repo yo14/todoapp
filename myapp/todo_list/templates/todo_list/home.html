@@ -8,7 +8,7 @@
         {% for item in all_items %}
             {% if item.completed %}
             <tr class="table-secondary">
-                <td>{{item.item}}</td>
+                <td class="hasdone">{{item.item}}</td>
                 <td>{{item.completed}}</td>
                 <td><center>DELETE</center></td>
             </tr>
@@ -22,4 +22,5 @@
         {% endfor %}
         </table>
     {% endif %}
+
 {% endblock %}
